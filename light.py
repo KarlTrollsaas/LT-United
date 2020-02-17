@@ -20,7 +20,6 @@ def start_skill():
     message = "Do you want to turn the light on or off?"
     return question(message)
 
-
 @ask.intent('LightOn')
 def lightOn():
     GPIO.output(18, GPIO.HIGH)

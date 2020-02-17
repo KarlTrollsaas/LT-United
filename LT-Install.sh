@@ -19,5 +19,5 @@ echo "************************"
 sudo pip install flask-ask
 echo
 
-echo "Next steps are to start the python program and ngrok at http port 5001"
-echo "REMEMBER TO UPDATE THE ALEXA ENDPOINT WITH THE NEW URL!"
+echo "The next steps are to start the correct python program for the current circuit and run ngrok on port 5001"
+echo "REMEMBER TO UPDATE THE ALEXA ENDPOINT WITH THE NEW URL FROM NGROK!"
