@@ -68,7 +68,7 @@ def pomodoro(tm):
 #starting question when he skill is trigered by Alexa
 @ask.launch
 def start_skill():
-    mes = "How many times"
+    mes = "How many session you want to have?"
     return question(mes)
 
 
