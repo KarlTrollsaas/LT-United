@@ -22,8 +22,8 @@ display.lcd_display_string("Pomodoro time", 1)
 
 
 def timer(m, s, message):
-"""Timer function: it counts down time on the display. 
-Parameters:
+    """Timer function: it counts down time on the display. 
+    Parameters:
     m - minuts to run,
     s - secconds to run, 
     message - String to display on the first line of display. Max 16 chars"""
@@ -74,9 +74,9 @@ def start_skill():
 
 @ask.intent('times', convert={"num" : int})
 def times(num):
-"""Function for running pomodoro timer when its trigered by Alexa.
-It takes a inegere parameter to determen how many sesions you want to run.
-We run time counter on the seperate thread to avoid time out error on the Alexa."""
+    """Function for running pomodoro timer when its trigered by Alexa.
+    It takes a inegere parameter to determen how many sesions you want to run.
+    We run time counter on the seperate thread to avoid time out error on the Alexa."""
     th = threading.Thread(target=pomodoro, args=[num])
     th.start()
     m = "Study time"
@@ -85,4 +85,3 @@ We run time counter on the seperate thread to avoid time out error on the Alexa.
 
 if __name__ == '__main__':
     app.run(port=5001)
-
