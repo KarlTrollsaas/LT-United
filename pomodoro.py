@@ -12,13 +12,22 @@ display = lcddriver.lcd()
 app = Flask(__name__)
 ask = Ask(app, '/')
 
+#starting web application
 @app.route('/')
 def homepage():
     return "Hi"
 
+#writing startup message to display
 display.lcd_display_string("Pomodoro time", 1)
 
+
 def timer(m, s, message):
+"""Timer function: it counts down time on the display. 
+Parameters:
+    m - minuts to run,
+    s - secconds to run, 
+    message - String to display on the first line of display. Max 16 chars"""
+
     print("Writing to display")
     display.lcd_display_string(message, 1)
     while m>0 or s>0:
@@ -48,13 +57,15 @@ def timer(m, s, message):
     display.lcd_display_string("Finish", 1)
 
 def pomodoro(tm):
+#function to start pomodoro loop. 
+#tm - how many times to run the loop including study time and pause.
     t = tm
     while t > 0:
         timer(1, 0, "No time to waste")
         timer(1, 0, "Take a break")
         t -=1
         
-
+#starting question when he skill is trigered by Alexa
 @ask.launch
 def start_skill():
     mes = "How many times"
@@ -63,6 +74,9 @@ def start_skill():
 
 @ask.intent('times', convert={"num" : int})
 def times(num):
+"""Function for running pomodoro timer when its trigered by Alexa.
+It takes a inegere parameter to determen how many sesions you want to run.
+We run time counter on the seperate thread to avoid time out error on the Alexa."""
     th = threading.Thread(target=pomodoro, args=[num])
     th.start()
     m = "Study time"
