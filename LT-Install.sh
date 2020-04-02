@@ -22,5 +22,6 @@ echo "************************"
 sudo pip install flask-ask
 echo
 
-echo "The next steps are to start the correct python program for the current circuit and run ngrok on port 5001"
-echo "REMEMBER TO UPDATE THE ALEXA ENDPOINT WITH THE NEW URL FROM NGROK!"
+echo "Installation of dependencies finished!"
+echo "Download ARM 32-bit version from: https://ngrok.com/download"
+echo "Remember to always update the Alexa endpoint with new url from Ngrok!"
