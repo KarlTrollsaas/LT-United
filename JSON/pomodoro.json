@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "total focus",
+            "invocationName": "pomodoro display",
             "modelConfiguration": {
                 "fallbackIntentSensitivity": {
                     "level": "LOW"
