@@ -1,0 +1,51 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "raspberry pi",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "LightOn",
+                    "slots": [],
+                    "samples": [
+                        "turn the light on",
+                        "light on"
+                    ]
+                },
+                {
+                    "name": "LightOff",
+                    "slots": [],
+                    "samples": [
+                        "turn the light off",
+                        "light off"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
