@@ -61,8 +61,8 @@ def pomodoro(tm):
 #tm - how many times to run the loop including study time and pause.
     t = tm
     while t > 0:
-        timer(1, 0, "No time to waste")
-        timer(1, 0, "Take a break")
+        timer(25, 0, "No time to waste")
+        timer(5, 0, "Take a break")
         t -=1
         
 #starting question when he skill is trigered by Alexa
