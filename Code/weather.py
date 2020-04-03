@@ -28,7 +28,7 @@ def start_skill():
 def weather(city_name):
     display.lcd_clear()
     
-    api_key = "0de2e56e548003786cbeaa018d960924"
+    api_key = "your api key"
 
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
