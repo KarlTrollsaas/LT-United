@@ -1,5 +1,5 @@
 # LT-United
-This repository is the result of a group project at Noroff University College, started in 2019 and finished in 2020. The purpose of this work is to provide a walkthrough, describing how to create a connection from Alexa to various electric circuits, connected to a Raspberry Pi.
+This repository is the result of a group project at Noroff University College, started in 2019 and finished in 2020. The purpose of this project is to provide a walkthrough, describing how to create a connection from Alexa to various electric circuits, connected to a Raspberry Pi.
 
 The Raspberry Pi is a small single-board computer created by the Raspberry Pi Foundation, and it has a General Purpose Input Output (GPIO) interface, which can be controlled by different programs written by users.
 
