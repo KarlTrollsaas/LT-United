@@ -1,5 +1,5 @@
 # LT-United
-This guide is the result of a group project at Noroff University College, started in 2019 and finished in 2020. The purpose of this document is to provide a walkthrough, describing how to create a connection from Alexa to various electric circuits, connected to a Raspberry Pi.
+This repository is the result of a group project at Noroff University College, started in 2019 and finished in 2020. The purpose of this work is to provide a walkthrough, describing how to create a connection from Alexa to various electric circuits, connected to a Raspberry Pi.
 
 The Raspberry Pi is a small single-board computer created by the Raspberry Pi Foundation, and it has a General Purpose Input Output (GPIO) interface, which can be controlled by different programs written by users.
 
@@ -12,3 +12,5 @@ https://www.instructables.com/id/Control-Raspberry-Pi-GPIO-With-Amazon-Echo-and-
 
 This project uses components from the small electronic kit from this URL:
 https://www.aliexpress.com/item/32968988155.html
+
+See the Setup Guide for more details.
